@@ -244,6 +244,49 @@ section{padding:5rem 2rem}
 }
 .step-content p{font-size:.88rem;color:var(--text2);line-height:1.5}
 
+/* ─── ABOUT ─── */
+.about-grid{
+  display:grid;grid-template-columns:1fr 1fr;gap:3rem;
+  align-items:start;
+}
+.about-photo{
+  width:100%;aspect-ratio:4/5;
+  background:var(--bg3);
+  border:1px solid var(--line);
+  border-radius:3px;
+  display:flex;align-items:center;justify-content:center;
+  color:var(--text2);font-size:.85rem;
+  text-align:center;padding:2rem;
+}
+.about-text h3{
+  font-size:1.1rem;color:var(--white);
+  margin-bottom:.8rem;font-weight:600;
+}
+.about-text p{
+  font-size:.92rem;color:var(--text2);
+  line-height:1.7;margin-bottom:1rem;
+}
+.about-stats{
+  display:grid;grid-template-columns:repeat(3,1fr);
+  gap:1rem;margin-top:1.5rem;
+  border-top:1px solid var(--line);
+  padding-top:1.5rem;
+}
+.about-stat-num{
+  font-family:'Bebas Neue',sans-serif;
+  font-size:1.6rem;color:var(--accent);
+}
+.about-stat-label{
+  font-size:.75rem;color:var(--text2);
+  text-transform:uppercase;letter-spacing:.06em;
+  margin-top:.2rem;
+}
+@media(max-width:768px){
+  .about-grid{grid-template-columns:1fr}
+  .about-photo{aspect-ratio:16/9}
+  .about-stats{grid-template-columns:repeat(3,1fr)}
+}
+
 /* ─── CTA SECTION ─── */
 .cta-section{
   text-align:center;
@@ -308,6 +351,7 @@ footer a{color:var(--accent);text-decoration:none}
     <a href="#services">Services</a>
     <a href="#difference">Why Us</a>
     <a href="#process">Process</a>
+    <a href="#about">About</a>
     <a href="#contact" class="nav-cta">Get a Quote</a>
   </div>
 </nav>
@@ -447,6 +491,48 @@ footer a{color:var(--accent);text-decoration:none}
         <div class="step-content">
           <h3>Pickup &amp; Delivery</h3>
           <p>Vehicle inspected at both ends. Bill of Lading signed. You're covered from start to finish.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" style="background:var(--bg2)">
+  <div class="container">
+    <div class="section-label">Who's Behind BladeHaul</div>
+    <div class="section-title">ABOUT</div>
+    <div class="about-grid">
+      <div class="about-photo">
+        Photo coming soon
+      </div>
+      <div class="about-text">
+        <h3>Mykhailo — Founder</h3>
+        <p>
+          I got into car shipping the hard way. Five years ago, I started at one of the largest auto transport brokerages in the United States and worked my way up from the ground. Hundreds of phone calls a day, learning the carrier market inside out, figuring out why customers get burned and how the system actually works.
+        </p>
+        <p>
+          Over the years, I've handled more than a thousand shipments across all 50 states. Private clients relocating cross-country, dealerships moving inventory from auctions, collectors shipping high-value vehicles in enclosed trailers. I've seen every scenario: tight deadlines, difficult routes, carrier no-shows, price disputes, chargebacks. I know what goes wrong and how to prevent it.
+        </p>
+        <p>
+          I started BladeHaul because I got tired of watching customers get lied to. The industry standard is to quote low, go silent, and then squeeze people for more money. I've seen it happen thousands of times from the inside. BladeHaul is built on doing the opposite: honest pricing, daily communication, and giving you real options instead of pressure.
+        </p>
+        <p>
+          Based in Ukraine, operating in the US market. Every shipment is managed personally. No call centers, no runaround, no scripts. Just real talk and real results.
+        </p>
+        <div class="about-stats">
+          <div>
+            <div class="about-stat-num">1,000+</div>
+            <div class="about-stat-label">Shipments Handled</div>
+          </div>
+          <div>
+            <div class="about-stat-num">5 YRS</div>
+            <div class="about-stat-label">In the Industry</div>
+          </div>
+          <div>
+            <div class="about-stat-num">ALL 50</div>
+            <div class="about-stat-label">States Covered</div>
+          </div>
         </div>
       </div>
     </div>
